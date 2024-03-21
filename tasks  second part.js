@@ -7,3 +7,9 @@ function extractNameFromTemplate(value) {
 console.log(extractNameFromTemplate("Hello, John Doe!"))
 console.log(extractNameFromTemplate('Hello, Chuck Norris!'))    //Yuuhu!
 
+function getFirstChar(value) {
+return value[0]
+}
+console.log(getFirstChar("cat"))
+console.log(getFirstChar("John Doe"))
+
