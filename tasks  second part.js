@@ -1,8 +1,9 @@
 function extractNameFromTemplate(value) {
-    console.log(value.slice(7, 15)) //извлечение по индексу знака в строке
-    console.log(value[15]) //извлечение по индексу знака в строке
+    let c = value.replace("Hello,", '')
+    let d = c.replace("!", '')
+    return d
+    }
 
-}
-extractNameFromTemplate("Hello, John Doe!")
-extractNameFromTemplate('Hello, Chuck Norris!')
+console.log(extractNameFromTemplate("Hello, John Doe!"))
+console.log(extractNameFromTemplate('Hello, Chuck Norris!'))    //Yuuhu!
 
