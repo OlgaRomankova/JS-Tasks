@@ -3,25 +3,21 @@ function concatenateStrings(value1, value2) {
        c = value1 + value2
     return c
 }
-concatenateStrings("aa", "bb")
-concatenateStrings("", "bb")
-concatenateStrings("aa", "")
+console.log(
+"first result-",
+concatenateStrings("aa", "bb"), "second result-",
+concatenateStrings("", "bb"), "third result-",
+concatenateStrings("aa", ""))
 
-let string = concatenateStrings("aa", "bb")
-console.log(string)
 
-let string1 = concatenateStrings("", "bb")
-console.log(string1)
 
-let string2 = concatenateStrings("aa", "")
-console.log(string2)
 
 function getStringLength(value) {
-        console.log(value.length)
+    return value.length
     }
-getStringLength("aaaaa")
-getStringLength("b")
-getStringLength("")
+console.log(getStringLength("aaaaa"))
+console.log(getStringLength("b"))
+console.log(getStringLength(""))
 
 
 function getStringFromTemplate(firstName, lastName) {
