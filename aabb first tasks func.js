@@ -22,11 +22,12 @@ console.log(getStringLength(""))
 
 function getStringFromTemplate(firstName, lastName) {
     const greeting = "Hello"
-    console.log(`${greeting}, ${firstName} ${lastName}!`)
+    // console.log(`${greeting}, ${firstName} ${lastName}!`)
+    return (`${greeting}, ${firstName} ${lastName}!`)
 }
-getStringFromTemplate("Olga", "Romankova")
-getStringFromTemplate("Kristina", "Garina")
-getStringFromTemplate("Everybody!", "Have a nice day")
+console.log(getStringFromTemplate("Olga", "Romankova"))
+console.log(getStringFromTemplate("Kristina", "Garina"))
+console.log(getStringFromTemplate("Everybody!", "Have a nice day"))
 
 
 function concatenateStrings1(value1, value2) {
