@@ -22,7 +22,7 @@ console.log(getStringLength(""))
 
 function getStringFromTemplate(firstName, lastName) {
     const greeting = "Hello"
-    // console.log(`${greeting}, ${firstName} ${lastName}!`)
+        // console.log(`${greeting}, ${firstName} ${lastName}!`)
     return (`${greeting}, ${firstName} ${lastName}!`)
 }
 console.log(getStringFromTemplate("Olga", "Romankova"))
