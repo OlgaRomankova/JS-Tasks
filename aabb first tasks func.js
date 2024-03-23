@@ -1,6 +1,5 @@
 function concatenateStrings(value1, value2) {
-       let c
-       c = value1 + value2
+       let c = value1 + value2
     return c
 }
 console.log(
