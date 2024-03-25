@@ -1,7 +1,6 @@
 function concatenateStrings(value1, value2) {
-       let c = value1 + value2
-    return c
-}
+    return value1 + value2
+    }
 console.log(
 "first result-",
 concatenateStrings("aa", "bb"), "second result-",
@@ -21,8 +20,8 @@ console.log(getStringLength(""))
 
 function getStringFromTemplate(firstName, lastName) {
     const greeting = "Hello"
-        // console.log(`${greeting}, ${firstName} ${lastName}!`)
-    return (`${greeting}, ${firstName} ${lastName}!`)
+        
+    return `${greeting}, ${firstName} ${lastName}!`
 }
 console.log(getStringFromTemplate("Olga", "Romankova"))
 console.log(getStringFromTemplate("Kristina", "Garina"))

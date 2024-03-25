@@ -18,14 +18,14 @@ const name = 'JavaScript';
 
 function lastSymbol(value1){
    let c = value1.length - 1
-       return value1[c]
+       return value1[c]    
 }
-console.log("Last symbol:", lastSymbol("JavaScript"))
+console.log("Last symbol:", lastSymbol("JavaScript")) //Last symbol: t
 
 function lastSymbol(value2){
     return value2[value2.length - 1]        
  }
- console.log("Last symbol:", lastSymbol("JavaScript"))
+ console.log("Last symbol:", lastSymbol("JavaScript")) // Last symbol: t
 
 //  Print the first and last letters of the sentence written 
 // in the text constant in the following format: 

@@ -1,11 +1,8 @@
-function abb (a, b) {
-    let a = "aa"
-    let b = "bb"
-}
-
-console.log(`${aa}${bb}`)
+let w = "aa"
+let q = "bb"
+console.log(`${w}${q}`)
 console.log("aa" + "bb")
-console.log(`${aa}\n${bb}`)
+console.log(`${w}\n${q}`)
 
 
 let a = "aaaaa"

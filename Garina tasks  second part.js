@@ -1,10 +1,8 @@
 // Extracts a name from template string 'Hello, First_Name Last_Name!'
 
 function extractNameFromTemplate(value) {
-    let c = value.replace("Hello,", '')
-    let d = c.replace("!", '')
-    return d
-    }
+    return value.replace("Hello,", '').replace("!", '')
+        }
 
 console.log(extractNameFromTemplate("Hello, John Doe!"))
 console.log(extractNameFromTemplate('Hello, Chuck Norris!'))    //Yuuhu!
