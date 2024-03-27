@@ -31,9 +31,44 @@ function repeatString(value, count) {
 // }
 
 function removeFirstOccurrences(str, value1) {
-    
-    return str.replace(value1, "")
+       return str.replace(value1, "")
     }
     console.log(removeFirstOccurrences('To be or not to be', 'not'))
     console.log(removeFirstOccurrences('I like legends', 'end'))
     console.log(removeFirstOccurrences('ABABAB','BA'))
+
+//     Remove the first and last angle brackets from tag string
+// @param {string} str
+// @return {string}
+// @example
+// '
+// ' => 'div'
+// '' => 'span'
+// '' => 'a'
+// */
+// function unbracketTag(str) {
+// return
+// }
+
+function unbracketTag(str) {
+    return str.slice(1, -1)
+    }
+    console.log(unbracketTag("div"))
+    console.log(unbracketTag("span"))
+    console.log(unbracketTag("a"))
+
+//     Converts all characters of the specified string into the upper case
+// @param {string} str
+// @return {string}
+// @example
+// 'Thunderstruck' => 'THUNDERSTRUCK'
+// 'abcdefghijklmnopqrstuvwxyz' => 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+// */
+// function convertToUpperCase(str) {
+// return
+
+function convertToUpperCase(str) {
+    return str.toUpperCase()
+}
+console.log(convertToUpperCase('Thunderstruck'))
+console.log(convertToUpperCase('abcdefghijklmnopqrstuvwxyz'))
