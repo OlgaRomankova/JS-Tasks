@@ -53,9 +53,9 @@ function removeFirstOccurrences(str, value1) {
 function unbracketTag(str) {
     return str.slice(1, -1)
     }
-    console.log(unbracketTag("div"))
-    console.log(unbracketTag("span"))
-    console.log(unbracketTag("a"))
+    console.log(unbracketTag("<div>"))
+    console.log(unbracketTag("<span>"))
+    console.log(unbracketTag("<a>"))
 
 //     Converts all characters of the specified string into the upper case
 // @param {string} str
@@ -72,3 +72,54 @@ function convertToUpperCase(str) {
 }
 console.log(convertToUpperCase('Thunderstruck'))
 console.log(convertToUpperCase('abcdefghijklmnopqrstuvwxyz'))
+
+// Extracts e-mails from single string with e-mails list delimeted by semicolons
+// @param {string} str
+// @return {array}
+// @example
+// 'angus.young@gmail.com;brian.johnson@hotmail.com;bon.scott@yahoo.com' => ['angus.young@gmail.com', 'brian.johnson@hotmail.com', 'bon.scott@yahoo.com']
+// 'info@gmail.com' => ['info@gmail.com']
+// /
+// function extractEmails(str) {
+// return
+// }
+function extractEmails(str) {
+    return str.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/gi)
+    }
+    console.log(extractEmails('angus.young@gmail.com;brian.johnson@hotmail.com;bon.scott@yahoo.com'))
+    console.log(extractEmails('info@gmail.com'))
+
+//     Returns true if the value is string; otherwise false.
+// @param {string} value
+// @return {boolean}
+// @example
+// isString() => false
+// isString(null) => false
+// isString([]) => false
+// isString({}) => false
+// isString('test') => true
+// isString(new String('test')) => true
+// */
+// function isString(value) {
+// }
+
+
+    function isString(value) {
+        return typeof value === 'string'
+      }
+console.log(isString())
+console.log(isString(null))
+console.log(isString([]))
+console.log(isString({}))
+console.log(isString('test'))
+console.log(isString(new String('test')))
+
+    function isString1(value) {
+    return typeof value !== 'string'
+  }
+console.log(isString1())
+console.log(isString1(null))
+console.log(isString1([]))
+console.log(isString1({}))
+console.log(isString1('test'))
+console.log(isString1(new String('test')))
