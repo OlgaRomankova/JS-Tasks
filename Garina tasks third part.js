@@ -57,6 +57,14 @@ function unbracketTag(str) {
     console.log(unbracketTag("<span>"))
     console.log(unbracketTag("<a>"))
 
+// the second option
+    function unbracketTag(str) {
+        
+        return str.match(/[\w+]/g).join('')
+    }
+        console.log(unbracketTag("<div>"))
+        console.log(unbracketTag("<span>"))
+        console.log(unbracketTag("<a>"))
 //     Converts all characters of the specified string into the upper case
 // @param {string} str
 // @return {string}
