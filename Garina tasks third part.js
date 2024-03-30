@@ -111,10 +111,11 @@ function extractEmails(str) {
 // function isString(value) {
 // }
 
-
-    function isString(value) {
-        return typeof value === 'string'
-      }
+function isString(value) {
+       
+    if (typeof value === 'string' || value instanceof String) {
+       return ("true")} else {return ("false")}
+  }
 console.log(isString())
 console.log(isString(null))
 console.log(isString([]))
@@ -122,12 +123,3 @@ console.log(isString({}))
 console.log(isString('test'))
 console.log(isString(new String('test')))
 
-    function isString1(value) {
-    return typeof value !== 'string'
-  }
-console.log(isString1())
-console.log(isString1(null))
-console.log(isString1([]))
-console.log(isString1({}))
-console.log(isString1('test'))
-console.log(isString1(new String('test')))
