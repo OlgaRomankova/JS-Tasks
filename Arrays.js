@@ -97,13 +97,11 @@ function getArrayOfStrings(arr) {
 
 
 function getUpperCaseStrings(arr) {
-   const upper = arr.map(element => {
-      return element.toUpperCase();
-    });
+   const newArray = arr.map(el => {return el.toUpperCase()})
+   console.log(newArray)
    }
-   console.log(getUpperCaseStrings(['permanent-internship', 'glutinous-shriek', 'multiplicative-elevation']))
-   console.log(getUpperCaseStrings([ 'a', 'b', 'c', 'd', 'e', 'f', 'g']))
-
+   getUpperCaseStrings(['permanent-internship', 'glutinous-shriek', 'multiplicative-elevation'])
+   getUpperCaseStrings([ 'a', 'b', 'c', 'd', 'e', 'f', 'g'])
 
 // Returns the array of string lengths from the specified string array.
 // @param {array} arr
