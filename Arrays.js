@@ -1,4 +1,5 @@
 
+// 1 EX 
 // Returns an index of the specified element in array or -1 if element is not found
 // @param {array} arr
 // @param {any} value
@@ -22,6 +23,7 @@ function findElement(arr, value) {
    console.log(findElement([0, 1, 2, 3, 4, 5], 5))
 
 
+// 2 EX
 // Returns the doubled array - elements of the specified array are repeated twice using original order
 // @param {array} arr
 // @return {array}
@@ -42,6 +44,7 @@ function doubleArray(arr) {
    console.log(doubleArray([]))
 
 
+   // 3 EX
    // Returns an array of positive numbers from the specified array in original order
 // @param {array} arr
 // @return {array}
@@ -61,7 +64,8 @@ function getArrayOfPositives(arr) {
    console.log(getArrayOfPositives([-1, 2, -5, -4, 0]))
    console.log(getArrayOfPositives([]))
 
-// Returns the array with strings only in the specified array (in original order)
+// 4 EX
+//  Returns the array with strings only in the specified array (in original order)
 // @param {array} arr
 // @return {array}
 // @example
@@ -76,14 +80,14 @@ function getArrayOfPositives(arr) {
 
 function getArrayOfStrings(arr) {
   
-      return arr.filter(funcСheckString)
-   }
+      return arr.filter((el) => el.typeofs === 'string')
+     }
 
-   console.log(getArrayOfPositives([0, 1, 'cat', 3, true, 'dog']))
-   console.log(getArrayOfPositives([1, 2, 3, 4, 5]))
-   console.log(getArrayOfPositives([ 'cat', 3, true, 'dog']))
+   console.log(getArrayOfStrings([0, 1, 'cat', 3, true, 'dog']))
+   console.log(getArrayOfStrings([1, 2, 3, 4, 5]))
+   console.log(getArrayOfStrings([ 'cat', 3, true, 'dog']))
 
-// Returns the array of useprcase strings from the specified array
+// 5 EX Returns the array of useprcase strings from the specified array
 // @param {array} arr
 // @return {array}
 // @example
@@ -95,7 +99,6 @@ function getArrayOfStrings(arr) {
 // }
 // /**
 
-
 function getUpperCaseStrings(arr) {
    const newArray = arr.map(el => {return el.toUpperCase()})
    console.log(newArray)
@@ -103,6 +106,7 @@ function getUpperCaseStrings(arr) {
    getUpperCaseStrings(['permanent-internship', 'glutinous-shriek', 'multiplicative-elevation'])
    getUpperCaseStrings([ 'a', 'b', 'c', 'd', 'e', 'f', 'g'])
 
+// 6 EX
 // Returns the array of string lengths from the specified string array.
 // @param {array} arr
 // @return {array}
@@ -114,5 +118,11 @@ function getUpperCaseStrings(arr) {
 // return
 // }
 
+ function getStringsLength(arr) {
+   const newArray = arr.map((word) => {return word.length})
+   console.log(newArray)
+   }
+getStringsLength([ '', 'a', 'bc', 'def', 'ghij' ])
+getStringsLength([ 'angular', 'react', 'ember' ])
 
-  
+
