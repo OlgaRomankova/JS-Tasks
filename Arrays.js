@@ -80,13 +80,22 @@ function getArrayOfPositives(arr) {
 
 function getArrayOfStrings(arr) {
   
-      return arr.filter((el) => el.typeofs === 'string')
-     }
-
+      return arr.filter(el => typeof el === 'string')
+           }
+     
    console.log(getArrayOfStrings([0, 1, 'cat', 3, true, 'dog']))
    console.log(getArrayOfStrings([1, 2, 3, 4, 5]))
-   console.log(getArrayOfStrings([ 'cat', 3, true, 'dog']))
+   console.log(getArrayOfStrings([ 'cat', 'dog', 'raccon' ]))
 
+//  Returns the array with numbers only in the specified array (in original order)
+   function getArrayOfStrings1(arr) {
+  
+      return arr.filter(el => typeof el === 'number')
+           }
+     
+   console.log(getArrayOfStrings1([0, 1, 'cat', 3, true, 'dog']))
+   console.log(getArrayOfStrings1([1, 2, 3, 4, 5]))
+   console.log(getArrayOfStrings1([ 'cat', 'dog', 'raccon' ]))
 // 5 EX Returns the array of useprcase strings from the specified array
 // @param {array} arr
 // @return {array}
