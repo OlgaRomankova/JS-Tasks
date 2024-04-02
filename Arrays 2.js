@@ -38,3 +38,24 @@ console.log(get3TopItems([ 1, 2 ]))
 console.log(get3TopItems([ 1, 2, 3 ]))
 console.log(get3TopItems([ 1,2,3,4,5,6,7,8,9,10 ]))
 console.log(get3TopItems([ 10, 10, 10, 10 ]))
+
+Sorts the specified array by country name first and city name (if countries are equal) in ascending order.
+@param {array} arr
+@return {array}
+@example
+[
+ { country: 'Russia',  city: 'Moscow' },
+ { country: 'Belarus', city: 'Minsk' },
+ { country: 'Poland',  city: 'Warsaw' },
+ { country: 'Russia',  city: 'Saint Petersburg' },
+ { country: 'Poland',  city: 'Krakow' },
+ { country: 'Belarus', city: 'Brest' }
+]
+                 =>
+[
+ { country: 'Belarus', city: 'Brest' },
+ { country: 'Belarus', city: 'Minsk' },
+ { country: 'Poland',  city: 'Krakow' },
+ { country: 'Poland',  city: 'Warsaw' },
+ { country: 'Russia',  city: 'Moscow' },
+ { country: 'Russia',  city: 'Saint Petersburg' }
