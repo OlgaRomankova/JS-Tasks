@@ -39,23 +39,69 @@ console.log(get3TopItems([ 1, 2, 3 ]))
 console.log(get3TopItems([ 1,2,3,4,5,6,7,8,9,10 ]))
 console.log(get3TopItems([ 10, 10, 10, 10 ]))
 
-Sorts the specified array by country name first and city name (if countries are equal) in ascending order.
-@param {array} arr
-@return {array}
-@example
-[
- { country: 'Russia',  city: 'Moscow' },
- { country: 'Belarus', city: 'Minsk' },
- { country: 'Poland',  city: 'Warsaw' },
- { country: 'Russia',  city: 'Saint Petersburg' },
- { country: 'Poland',  city: 'Krakow' },
- { country: 'Belarus', city: 'Brest' }
-]
-                 =>
-[
- { country: 'Belarus', city: 'Brest' },
- { country: 'Belarus', city: 'Minsk' },
- { country: 'Poland',  city: 'Krakow' },
- { country: 'Poland',  city: 'Warsaw' },
- { country: 'Russia',  city: 'Moscow' },
- { country: 'Russia',  city: 'Saint Petersburg' }
+// Sorts the specified array by country name first and city name
+//  (if countries are equal) in ascending order.
+// @param {array} arr
+// @return {array}
+// // @example
+// [ { country: 'Russia',  city: 'Moscow' },
+//  { country: 'Belarus', city: 'Minsk' },
+//  { country: 'Poland',  city: 'Warsaw' },
+//  { country: 'Russia',  city: 'Saint Petersburg' },
+//  { country: 'Poland',  city: 'Krakow' },
+//  { country: 'Belarus', city: 'Brest' }
+// ]
+//                  =>
+// [
+//  { country: 'Belarus', city: 'Brest' },
+//  { country: 'Belarus', city: 'Minsk' },
+//  { country: 'Poland',  city: 'Krakow' },
+//  { country: 'Poland',  city: 'Warsaw' },
+//  { country: 'Russia',  city: 'Moscow' },
+//  { country: 'Russia',  city: 'Saint Petersburg' }
+// ]
+// function sortCitiesArray(arr) {
+// return
+// }
+function sortCitiesArray(arr) 
+{    return arr.sort(function (a, b)  {   
+        const f = a.country;  
+        const s = b.country;
+
+         if(f.localeCompare(s) < 0)
+         return -1;
+         else if(f.localeCompare(s) > 0)
+         return 1;
+         else if(f.localeCompare(s) == 0)
+         return 0;
+    });
+}
+console.log(sortCitiesArray([ 
+{ country: 'Russia',  city: 'Moscow' },
+{ country: 'Belarus', city: 'Minsk' },
+{ country: 'Poland',  city: 'Warsaw' },
+{ country: 'Russia',  city: 'Saint Petersburg' },
+{ country: 'Poland',  city: 'Krakow' },
+{ country: 'Belarus', city: 'Brest' } ]))
+// without function
+const arr = [ { country: 'Russia',  city: 'Moscow' },
+{ country: 'Belarus', city: 'Minsk' },
+{ country: 'Poland',  city: 'Warsaw' },
+{ country: 'Russia',  city: 'Saint Petersburg' },
+{ country: 'Poland',  city: 'Krakow' },
+{ country: 'Belarus', city: 'Brest' } ];
+
+
+    arr.sort(function(a, b) 
+    {   var f = a.country;  
+         var s = b.country;
+
+            if(f.localeCompare(s) < 0)
+            return -1;
+            else if(f.localeCompare(s) > 0)
+            return 1;
+            else if(f.localeCompare(s) == 0)
+         return 0;
+    });
+
+console.log(arr)
