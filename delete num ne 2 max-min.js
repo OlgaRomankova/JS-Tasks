@@ -39,5 +39,6 @@ const stringToNumber = function(str){
   }
   console.log(friend(["Ryan", "Kieran", "Jason", "Yous"]))
    
+  
 
    

@@ -11,7 +11,7 @@ function opposite(number) {
             sum += array[i];
         }
     }
-    return sum;
+    return sum;   // не забываем возвращать результат
 }
 console.log(SummPositive([5,  7, -2]))
 
@@ -25,6 +25,7 @@ return sum
 }
 console.log(negativeSum([5,  7, -2, -8]))
 
+// через reduce
 function positiveSum1 (arr) {
   return arr.filter(x => x>=0).reduce((a, c) => a + c, 0);
 }
