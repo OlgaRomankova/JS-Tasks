@@ -8,4 +8,17 @@ function reverseWords(str) {
 };
 console.log(reverseWords("sihT si na !elpmaxe"))
 console.log(reverseWords("elbuod  secaps"))
-console.log(reverseWords("olleH !dlroW"))
+
+
+function reverseWords1(str) {
+    return str.split(' ').map(function(word){
+      return word.split('').reverse(). join("")    
+    }).join(" ")                         
+  }
+  console.log(reverseWords1("olleH !dlroW"))
+
+
+  function reverseWords3(str) {
+    return str.split(" ").map((word) => word.split("").reverse().join("")).join(" ");
+  }
+  console.log(reverseWords1("4321 8765"))
