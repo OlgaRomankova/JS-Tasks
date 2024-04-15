@@ -3,12 +3,12 @@ function oddOrEven(array) {
       return sum + item
     }, 0) % 2 == 0 ? 'even' : 'odd';
   }
-    console.log(oddOrEven([1, 2]));
+  console.log(oddOrEven([1, 2]));
   console.log(oddOrEven([1, 3]));
   console.log(oddOrEven([]));
 
 function OddOrEvenSpec1(array){
-   let sum = array.reduce((x, y) => x + y, 0)
+   let sum = array.reduce((x, y) => x + y)
   return sum % 2 === 0 ? "even" : "odd"
 }
 console.log(OddOrEvenSpec1([0, 1, 4]))
