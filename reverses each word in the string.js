@@ -8,3 +8,4 @@ function reverseWords(str) {
 };
 console.log(reverseWords("sihT si na !elpmaxe"))
 console.log(reverseWords("elbuod  secaps"))
+console.log(reverseWords("olleH !dlroW"))
