@@ -8,7 +8,7 @@ function oddOrEven(array) {
   console.log(oddOrEven([]));
 
 function OddOrEvenSpec1(array){
-   let sum = array.reduce((x, y) => x + y)
+   let sum = array.reduce((x, y) => x + y, 0)
   return sum % 2 === 0 ? "even" : "odd"
 }
 console.log(OddOrEvenSpec1([0, 1, 4]))
