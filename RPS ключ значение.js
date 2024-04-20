@@ -6,7 +6,7 @@ const rps = (p1, p2) => {
     };
     return rules[p1] === p2 ? 'Player 1 won!' : p1 === p2 ? 'Draw!' : 'Player 2 won!';
   };
-  console.log(rps("scissors", "paper"))  
+console.log(rps("scissors", "paper"))  
 console.log(rps("scissors", "rock"))   
 console.log(rps("paper", "scissors"))  
 console.log(rps("rock", "scissors"))   

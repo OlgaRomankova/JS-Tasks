@@ -52,21 +52,18 @@ function countSheeps(sheep) {
             true,  true,  true,  true ,
             false, false, true,  true]))
 
-            function countSheeps5(arrayOfSheep) {
-                let count = 0;
-                
-                arrayOfSheep.forEach( function (sheep) {
-                  if (sheep)
-                    count++;
-                });
-                
-                return count;
-              }
-
-              console.log(countSheeps5
-                ([true,  true,  true,  false,
-                true,  true,  true,  true ,
-                true,  false, true,  false,
-                true,  false, false, true ,
-                true,  true,  true,  true ,
-                false, false, true,  true, true]))
+function countSheeps5(arrayOfSheep) {
+let count = 0;                
+arrayOfSheep.forEach( function (sheep) {
+if (sheep)
+count++;
+});            
+return count;
+}
+console.log(countSheeps5
+([true,  true,  true,  false,
+true,  true,  true,  true ,
+true,  false, true,  false,
+true,  false, false, true ,
+true,  true,  true,  true ,
+false, false, true,  true, true]))

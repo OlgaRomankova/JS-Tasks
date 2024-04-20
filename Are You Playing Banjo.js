@@ -12,9 +12,9 @@ function areYouPlayingBanjo(name) {
   console.log(areYouPlayingBanjo("rolf"));
 
   function areYouPlayingBanjo1(name) {
-    {
+    
   return name[0].toLowerCase() == "r" ? name + " plays banjo" : name + " does not play banjo";
-      }                             
+                                
   } 
   console.log(areYouPlayingBanjo1("Adam"));
   console.log(areYouPlayingBanjo1("Paul"));
