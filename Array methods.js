@@ -12,7 +12,13 @@ let shiftarray = array.shift()
 console.log(array)
 let unshiftarray = array.unshift(0)
 console.log(array)
+// arr.splice() – Метод arr.splice – это универсальный «швейцарский нож»
+//  для работы с массивами. Умеет всё: добавлять, удалять и заменять элементы.
 let splicearray = array.splice(0, 2); // начиная с индекса 1, удалить 1 элемент
 let spliceAddArray = array.splice(0, 3, "Давай", "танцевать")
 console.log(array)
-console.log(spliceAddArray)
+console.log(spliceAddArray) // массив из удалённых элементов
+// slice
+
+
+
